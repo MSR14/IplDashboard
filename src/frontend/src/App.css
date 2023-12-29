@@ -1,0 +1,97 @@
+.App {
+  padding: 20px;
+  text-align: left;
+}
+.TeamPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+.team-name-section {
+  grid-column: span 3;
+  justify-self: start;
+  align-self: end;
+}
+.team-name {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.win-loss-section {
+  justify-self: center;
+  padding: 40px;
+  text-align: center;
+}
+.match-detail-section {
+  grid-column: span 4;
+}
+.more-link {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.5rem;
+}
+.MatchDetailCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.match-date,
+.match-venue,
+.match-result {
+  margin-top: 10px;
+}
+.additional-detail {
+  text-align: right;
+}
+.additional-detail > p {
+  margin-bottom: 20px;
+}
+.won-card {
+  background-color: #4da375;
+}
+
+.lost-card {
+  background-color: #a34d5d;
+}
+.MatchSmallCard {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.MatchPage {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: 20px;
+}
+.MatchPage .year-selector {
+  justify-self: end;
+  padding: 20px;
+}
+.MatchPage .page-heading {
+  margin: 20px auto;
+}
+.YearSelector {
+  text-align: right;
+  list-style-type: none;
+}
+.YearSelector li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.HomePage .app-name {
+  font-size: 3rem;
+  margin: 30px auto;
+}
+.HomePage .team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.TeamTile {
+  height: 170px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+}

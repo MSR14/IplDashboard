@@ -16,7 +16,7 @@ import lombok.Setter;
 @Entity
 public class Match {
     @Id
-    private long id;
+    private Long id;
     private String city;
     private LocalDate date;
     private String season;
@@ -32,4 +32,14 @@ public class Match {
     private String playerOfMatch;
     private String umpire1;
     private String umpire2;
+
+    @Override
+    public String toString() {
+        return "Match [id=" + id + ", city=" + city + ", date=" + date + ", season=" + season + ", matchNumber="
+                + matchNumber + ", team1=" + team1 + ", team2=" + team2 + ", tossWinner=" + tossWinner
+                + ", tossDecision=" + tossDecision + ", winningTeam=" + winningTeam + ", wonBy=" + wonBy
+                + ", winMargin=" + winMargin + ", method=" + method + ", playerOfMatch=" + playerOfMatch + ", umpire1="
+                + umpire1 + ", umpire2=" + umpire2 + "]";
+    }
+
 }
